@@ -1,0 +1,133 @@
+.desc {
+    /*
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 85%;
+    */
+
+    /* webkit way, needs better solution */
+    -webkit-line-clamp: 4;
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    
+}
+
+.beerImage {
+    width: 75%;
+}
+
+.cont-body {
+    /* height: 100%; */
+    width: 100%;
+    /* background-image: url("../images/background.jpg"); 
+    background-repeat: no-repeat; */
+    /* position: relative; */
+    z-index: 1;
+    /* background-color: #FDCA45; */
+    overflow: auto;
+}
+
+.results-area {
+    max-height: 75vh;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.results-card, .pick-card {
+    background-color: rgba(255, 253, 253, 0.22);
+    color: white;
+}
+
+
+#search-button {
+    background-color: #FDCA45;
+    border-color: #fcab42;
+    border-width: 2.5px;
+    color: black;
+}
+
+#search-button:hover {
+    color: white;
+}
+
+.results-card:hover {
+    background-color: rgba(255, 253, 253, 0.26);
+    
+}
+
+.section1 {
+    height: 100%;
+}
+
+.navbar-brand, .nav-link {
+    color: #FDCA45!important;
+}
+
+.navbar {
+    z-index: 1;
+}
+
+.save-favorite {
+    transition-duration: 2s;
+    font-size: 1.5em;
+    color: black;
+}
+
+.save-favorite:hover {
+    color: #FDCA45;
+    transition-duration: 1s;
+}
+
+.more {
+    font-size: .75em;
+}
+
+.large {
+    font-size: 1.5em;
+}
+
+.medium {
+    font-size: 1.25em;
+}
+
+/* html {
+    height: 100%;
+} */
+.navbar-brand, .navbar-light .navbar-nav .nav-link {
+    font-family: 'Chela One', cursive;
+    font-size: 25px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    /* min-height: 100%; */
+    background-color: #FDCA45;
+    background-image: url("../images/background.jpg"); 
+    background-repeat: no-repeat;
+    color: #FDCA45;
+}
+
+.results-area::-webkit-scrollbar,
+.results-area::-webkit-scrollbar-track {
+    width: 1px;
+    background: rgba(152, 152, 152, 0);
+}
+
+body::-webkit-scrollbar,
+body::-webkit-scrollbar-track {
+    width: 1px;
+    background: rgba(152, 152, 152, 0);
+}
+
+body::-webkit-scrollbar-thumb {
+    background: rgba(152, 152, 152, 0.15);
+}
+
+
+.results-area::-webkit-scrollbar-thumb {
+    background: rgba(152, 152, 152, 0.15);
+}
+
